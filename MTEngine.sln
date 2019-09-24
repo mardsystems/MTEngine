@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTEngine", "MTEngine\MTEngine.csproj", "{E72792D9-1ED3-4E60-8FF3-E87915E9E19C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTEngine.Web", "MTEngine.Web\MTEngine.Web.csproj", "{E72792D9-1ED3-4E60-8FF3-E87915E9E19C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTEngine.ApplicationModel", "MTEngine.ApplicationModel\MTEngine.ApplicationModel.csproj", "{F65807E5-5C68-40C2-A94D-E753092E2F50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTEngine.DomainModel", "MTEngine.DomainModel\MTEngine.DomainModel.csproj", "{5BD6D1E1-D6C9-4BF1-8ADF-7559194DFB12}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTEngine.Infrastructure", "MTEngine.Infrastructure\MTEngine.Infrastructure.csproj", "{ADD89970-0274-41C6-BEDC-9E9E389D7F3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Extensions", "System.Extensions\System.Extensions.csproj", "{56CEE686-0C24-4367-8577-FEBC52C8AAED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Camada de Apresentação", "1 - Camada de Apresentação", "{1AC1058D-768F-4D03-A8B0-D5FEDE00D346}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Camada de Aplicação", "2 - Camada de Aplicação", "{86CD6133-1042-4EC5-9935-7F98676443B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Camada de Domínio", "3 - Camada de Domínio", "{9D73B610-F83E-4B14-94D9-4283EB455AA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Camada de Infraestrutura", "4 - Camada de Infraestrutura", "{3A6DB93A-887F-4F42-BD95-0D2AC7620BF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Documentação", "5 - Documentação", "{EDDCFB02-6356-46B3-BCE9-BC7B88461A34}"
+	ProjectSection(SolutionItems) = preProject
+		MTEngine.asta = MTEngine.asta
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.EntityFrameworkCore.Extensions", "Microsoft.EntityFrameworkCore.Extensions\Microsoft.EntityFrameworkCore.Extensions.csproj", "{A53DB9A1-F9C9-4E8A-9085-8EDDA34ADF1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +39,37 @@ Global
 		{E72792D9-1ED3-4E60-8FF3-E87915E9E19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E72792D9-1ED3-4E60-8FF3-E87915E9E19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E72792D9-1ED3-4E60-8FF3-E87915E9E19C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65807E5-5C68-40C2-A94D-E753092E2F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65807E5-5C68-40C2-A94D-E753092E2F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65807E5-5C68-40C2-A94D-E753092E2F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65807E5-5C68-40C2-A94D-E753092E2F50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD6D1E1-D6C9-4BF1-8ADF-7559194DFB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD6D1E1-D6C9-4BF1-8ADF-7559194DFB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD6D1E1-D6C9-4BF1-8ADF-7559194DFB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD6D1E1-D6C9-4BF1-8ADF-7559194DFB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD89970-0274-41C6-BEDC-9E9E389D7F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD89970-0274-41C6-BEDC-9E9E389D7F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD89970-0274-41C6-BEDC-9E9E389D7F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD89970-0274-41C6-BEDC-9E9E389D7F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56CEE686-0C24-4367-8577-FEBC52C8AAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56CEE686-0C24-4367-8577-FEBC52C8AAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56CEE686-0C24-4367-8577-FEBC52C8AAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56CEE686-0C24-4367-8577-FEBC52C8AAED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A53DB9A1-F9C9-4E8A-9085-8EDDA34ADF1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53DB9A1-F9C9-4E8A-9085-8EDDA34ADF1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53DB9A1-F9C9-4E8A-9085-8EDDA34ADF1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53DB9A1-F9C9-4E8A-9085-8EDDA34ADF1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E72792D9-1ED3-4E60-8FF3-E87915E9E19C} = {1AC1058D-768F-4D03-A8B0-D5FEDE00D346}
+		{F65807E5-5C68-40C2-A94D-E753092E2F50} = {86CD6133-1042-4EC5-9935-7F98676443B4}
+		{5BD6D1E1-D6C9-4BF1-8ADF-7559194DFB12} = {9D73B610-F83E-4B14-94D9-4283EB455AA5}
+		{ADD89970-0274-41C6-BEDC-9E9E389D7F3A} = {3A6DB93A-887F-4F42-BD95-0D2AC7620BF5}
+		{56CEE686-0C24-4367-8577-FEBC52C8AAED} = {3A6DB93A-887F-4F42-BD95-0D2AC7620BF5}
+		{A53DB9A1-F9C9-4E8A-9085-8EDDA34ADF1E} = {3A6DB93A-887F-4F42-BD95-0D2AC7620BF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {865B572D-A43D-40B5-A3A1-05E01B7A0A0C}

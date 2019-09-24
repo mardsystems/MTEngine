@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>MTEngine</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Transformacoes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="4.7.1" />
+    <PackageReference Include="SimpleInjector.Packaging" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.EntityFrameworkCore.Extensions\Microsoft.EntityFrameworkCore.Extensions.csproj" />
+    <ProjectReference Include="..\MTEngine.ApplicationModel\MTEngine.ApplicationModel.csproj" />
+    <ProjectReference Include="..\MTEngine.DomainModel\MTEngine.DomainModel.csproj" />
+    <ProjectReference Include="..\System.Extensions\System.Extensions.csproj" />
+  </ItemGroup>
+
+</Project>
