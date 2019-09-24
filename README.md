@@ -1,6 +1,6 @@
 # MTEngine
 
-MTEngine È o acrÙnimo de Message Transformation Engine, ou Motor de TransformaÁ„o de Mensagens.
+MTEngine √© o acr√¥nimo de Message Transformation Engine, ou Motor de Transforma√ß√£o de Mensagens.
 
 # Rotas
 
@@ -9,18 +9,19 @@ Existem duas rotas:
 - https://localhost:44397/transformacoes
 - https://localhost:44397/regras
 
-A primeira rota serve para transformar mensagens e a segunda para gerenciar o cadastro de regras de transformaÁ„o de mensagens.
+A primeira rota serve para transformar mensagens e a segunda para gerenciar o cadastro de regras de transforma√ß√£o de mensagens.
 
 # Banco de dados
 
-O banco de dados ser· iniciado por padr„o com as regras j· conhecidas dos estados do Rio, Minas e Acre.
+O banco de dados ser√° iniciado por padr√£o com as regras j√° conhecidas dos estados do Rio, Minas e Acre.
 
-# Exemplo de transformaÁ„o de mensagem do estado do Rio de janeiro
+# Exemplo de transforma√ß√£o de mensagem do estado do Rio de janeiro
 
 POST https://localhost:44397/transformacoes
 Content-Type: application/xml
 Regra: Rio
 
+```xml
 <corpo>
     <cidade>
         <nome>Rio de Janeiro</nome>
@@ -39,8 +40,9 @@ Regra: Rio
         </bairros>
     </cidade>
 </corpo>
+```
 
-ou seja, È necess·rio criar um cabeÁalho chamado "regra" contendo o nome da regra de transformaÁ„o relativa a integraÁ„o atual e tambÈm especificar o content-type de acordo com o tipo de media informado.
+ou seja, √© necess√°rio criar um cabe√ßalho chamado "regra" contendo o nome da regra de transforma√ß√£o relativa a integra√ß√£o atual e tamb√©m especificar o content-type de acordo com o tipo de media informado.
 
 Para ver uma lista completa de todas as regras cadastradas consulte:
 GET	 https://localhost:44397/regras
@@ -50,6 +52,7 @@ GET	 https://localhost:44397/regras
 POST https://localhost:44397/regras
 Content-Type: application/json
 
+```json
 {
     "nome": "Rio",
     "pathDeCidades": "/corpo/cidade",
@@ -60,9 +63,10 @@ Content-Type: application/json
     "pathDoNumeroDeHabitantesDoBairro": "populacao",
     "tipoDeFormato": 1
 }
+```
 
-O tipo de formato suportado È o Xml = 1 e o JSON = 2.
+O tipo de formato suportado √© o Xml = 1 e o JSON = 2.
 
-# ObservaÁ„o
+# Observa√ß√£o
 
 Todo o sistema foi feito em 1 dia apenas.
