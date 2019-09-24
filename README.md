@@ -17,9 +17,11 @@ O banco de dados será iniciado por padrão com as regras já conhecidas dos est
 
 # Exemplo de transformação de mensagem do estado do Rio de janeiro
 
+```
 POST https://localhost:44397/transformacoes
 Content-Type: application/xml
 Regra: Rio
+```
 
 ```xml
 <corpo>
@@ -49,8 +51,10 @@ GET	 https://localhost:44397/regras
 
 # Cadastro de uma nova regra:
 
+```
 POST https://localhost:44397/regras
 Content-Type: application/json
+```
 
 ```json
 {
